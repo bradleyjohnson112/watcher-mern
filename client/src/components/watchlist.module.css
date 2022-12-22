@@ -1,0 +1,130 @@
+.section {
+  height: 100vh;
+  width: 100%;
+  padding: 10rem 2rem 5rem 2rem;
+}
+
+.sectionContent {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.sectionContent p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.sectionContent p span {
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+.sectionContent ul {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionContent ul li {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.show {
+  /* display: flex; */
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  padding: 5rem 3.5rem;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
+  position: relative;
+}
+
+.show,
+.showBackground,
+.showOverlay {
+  border-radius: 12.5px;
+}
+
+.showBackground,
+.showOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.showBackground {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 1;
+}
+
+.showOverlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 2;
+}
+
+.showContent {
+  z-index: 3;
+  position: relative;
+}
+
+.showContent h3 {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.show span {
+  display: block;
+}
+
+.showContent .status {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.status span:first-child {
+  margin-right: 10px;
+}
+
+.episode {
+  /* margin-bottom: 1.5rem; */
+}
+
+.episodeName {
+  margin-bottom: 1.5rem;
+}
+
+.episodeDate {}
+
+.showContent button {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #d1d1d1;
+  color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 10rem 3rem 5rem 3rem;
+  }
+
+  .show {
+    width: 50%;
+  }
+}

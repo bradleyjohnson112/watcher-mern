@@ -1,0 +1,72 @@
+.header,
+.landingHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.landingHeader {
+  position: absolute;
+  background: #fff;
+}
+
+.navLink {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  transition: background 0.3s linear;
+  display: inline-block;
+  color: #393c41;
+  text-decoration: none;
+}
+
+.navIcon {
+  font-size: 2rem;
+}
+
+.headerRight .navLink {
+  margin-left: 1rem;
+}
+
+.navLink:hover {
+  background-color: #0000001c;
+}
+
+.headerUser {
+  margin-left: 0.4rem;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 5;
+  padding: 1rem 2rem;
+  transition: transform 0.5s cubic-bezier(0.5, 0, 0, 0.75);
+  background-color: var(--primary-color);
+}
+
+.sidebarCloseBtn {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar .navLink {
+  color: var(--secondary-color);
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 1.8rem;
+  border-radius: 1.5rem;
+}

@@ -1,0 +1,94 @@
+.section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 1rem;
+  color: #fff;
+  position: relative;
+}
+
+.backgroundImg,
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.backgroundImg {
+  background-image: url("./landingBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.sectionContent {
+  z-index: 10;
+  position: absolute;
+  width: 90%;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sectionContent h1 {
+  width: 95%;
+  font-size: 5.3rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.formGroup input {
+  width: 100%;
+  height: 5rem;
+  border: 0.5px solid var(--primary-color);
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  border-radius: 3px;
+  font-size: 1.6rem;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 1.1rem 2.5rem;
+  border-radius: 3px;
+  border: none;
+  float: right;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {}
+
+  .sectionContent {
+    width: 45%;
+    top: 18%;
+    left: 15%;
+    transform: translateX(0);
+  }
+
+  .sectionContent h1 {
+    font-size: 8rem;
+    margin-bottom: 4rem;
+  }
+
+  .homeForm {
+    width: 60%;
+  }
+
+  input[type="submit"] {
+    width: auto;
+    float: right;
+  }
+}
